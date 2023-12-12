@@ -47,6 +47,11 @@ class _MyWidgetState extends State<MyWidget> {
     super.initState();
   }
 
+  ///
+  /// load these images in a prior screen or
+  /// use state management to reload the screen after
+  /// the assets are loaded.
+  ///
   Future<void> getImages() async {
     heatImage = await loadUiImage("assets/heat.png");
     inseminationImage = await loadUiImage("assets/insemination.png");
